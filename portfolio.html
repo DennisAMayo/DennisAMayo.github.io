@@ -10,85 +10,85 @@
     <link href="./assets/css/fontawesome.min.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100 bg-light">
-    <div class="container">
-        <header>
-            <div class="d-flex flex-column flex-md-row align-items-center mb-4 border-bottom">
-                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-                    <span class="fs-4">Dennis Mayo</span>
-                </a>
-            
-                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                    <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Home</a>
-                    <a class="me-3 py-2 text-dark text-decoration-none" href="./portfolio.html">Portfolio</a>
-                    <a class="me-3 py-2 text-dark text-decoration-none active" href="./contact.html">Contact Me</a>
-                </nav>
-            </div>
-        </header>
+<body class="d-flex flex-column bg-light h-100">
+    
+    <header class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center mb-4 border-bottom">
+            <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none">
+                <span class="fs-4">Dennis Mayo</span>
+            </a>
         
-        <main class="flex-shrink-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center mb-3">
-                        If you wish to contact me, you can either use the form below or use one of the other methods provided.
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Home</a>
+                <a class="me-3 py-2 text-dark text-decoration-none active" href="./portfolio.html">Portfolio</a>
+                <a class="me-3 py-2 text-dark text-decoration-none" href="./contact.html">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="flex-shrink-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-3">
+                    If you wish to contact me, you can either use the form below or use one of the other methods provided.
+                </div>
+                <div class="col-md-4">
+                    <h2 class="h3 mb-4">Contact info</h2>
+                    <div>
+                        <i class="fa fa-free-code-camp"></i>
+                        <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a></p>
                     </div>
-                    <div class="col-md-4">
-                        <h2 class="h3 mb-4">Contact info</h2>
-                        <div>
-                          <i class="fa fa-free-code-camp"></i>
-                          <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a></p>
-                        </div>
-                        <div>
-                            <i class="fas fa-at"></i>
-                            <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="message"></div>
-                        <form id="contact" method="POST">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-1">
-                                        <label for="contactName" class="form-label">Name</label>
-                                        <input type="text" class="form-control form-control-sm" name="name" id="contactName" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-1">
-                                        <label for="contactEmail" class="form-label">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" name="email" id="contactEmail" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-1">
-                                <label for="contactSubject" class="form-label">Subject</label>
-                                <input type="text" class="form-control form-control-sm" name="subject" id="contactSubject" required>
-                            </div>
-                            <div class="mb-1">
-                                <label for="contactMessage" class="form-label">Message</label>
-                                <textarea class="form-control form-control-sm" name="message" rows="5" id="contactMessage" required></textarea>
-                            </div>
-                            <div class="row">
-                                <div class="ms-md-auto">
-                                    <button type="submit" class="btn btn-sm btn-success">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div>
+                        <i class="fas fa-at"></i>
+                        <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a></p>
                     </div>
                 </div>
+                <div class="col-md-8">
+                    <div class="message"></div>
+                    <form id="contact" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-1">
+                                    <label for="contactName" class="form-label">Name</label>
+                                    <input type="text" class="form-control form-control-sm" name="name" id="contactName" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-1">
+                                    <label for="contactEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" name="email" id="contactEmail" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-1">
+                            <label for="contactSubject" class="form-label">Subject</label>
+                            <input type="text" class="form-control form-control-sm" name="subject" id="contactSubject" required>
+                        </div>
+                        <div class="mb-1">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control form-control-sm" name="message" rows="5" id="contactMessage" required></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="ms-md-auto">
+                                <button type="submit" class="btn btn-sm btn-success">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="footer mt-4 py-1 border-top">
-            <div class="container text-center">
-                <span class="text-muted">&copy; Copywrite 2021 Dennis Mayo.</span>
-            </div>
-        </footer>
-    </div>
+	<footer class="footer mt-auto">
+        <div class="container py-3 border-top text-center">
+          <span class="text-muted">&copy; Copywrite 2021 Dennis Mayo.</span>
+        </div>
+    </footer>
 
     <script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/fontawesome.min.js"></script>
+    
 </body>
 
 </html>
