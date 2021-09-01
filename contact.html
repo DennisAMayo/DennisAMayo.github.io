@@ -5,79 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./assets/css/custom.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Dennis Mayo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.php">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.php">Contact Me</a>
-                    </li>
 
-                    </ul>
-                </div>
+<body class="d-flex flex-column h-100 bg-light">
+    <div class="container">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <span class="fs-4">Dennis Mayo</span>
+                </a>
+            
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Home</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="./portfolio.html">Portfolio</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none active" href="./contact.html">Contact Me</a>
+                </nav>
             </div>
-        </nav>
-    </header>
-
-
-
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6">
-                    <form id="contact" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="contactName" class="form-label">Name</label>
-                                    <input type="text" class="form-control" name="name" id="contactName">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="contactEmail" class="form-label">Email address</label>
-                                    <input type="email" class="form-control" name="email" id="contactEmail">
-                                </div>
-                            </div>
+        </header>
+        
+        <main class="flex-shrink-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-3">
+                        If you wish to contact me, you can either use the form below or use one of the other methods provided.
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="h3 mb-4">Contact info</h2>
+                        <div class="media mb-2">
+                          <i class="d-flex g-color-gray-dark-v5 mt-1 mr-3 icon-communication-062 u-line-icon-pro"></i>
+                          <div class="media-body">
+                            <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:noreply@deadontacticalarms.com">noreply@deadontacticalarms.com</a>
+                            </p>
+                          </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="contactSubject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="contactSubject">
+                        <div class="media mb-2">
+                          <i class="d-flex g-color-gray-dark-v5 mt-1 mr-3 icon-communication-033 u-line-icon-pro"></i>
+                          <div class="media-body">
+                            <p class="g-color-gray-dark-v3">Call: <a class="g-color-gray-dark-v4" href="tel:(252) 245-0195">(252) 245-0195</a>
+                            </p>
                           </div>
-                        <div class="mb-3">
-                            <label for="contactMessage" class="form-label">Message</label>
-                            <textarea class="form-control" name="message" id="contactMessage"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-primary"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> Send Message</button>
-                      </form>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="message"></div>
+                        <form id="contact" method="POST">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-1">
+                                        <label for="contactName" class="form-label">Name</label>
+                                        <input type="text" class="form-control form-control-sm" name="name" id="contactName" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-1">
+                                        <label for="contactEmail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control form-control-sm" name="email" id="contactEmail" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-1">
+                                <label for="contactSubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control form-control-sm" name="subject" id="contactSubject" required>
+                            </div>
+                            <div class="mb-1">
+                                <label for="contactMessage" class="form-label">Message</label>
+                                <textarea class="form-control form-control-sm" name="message" rows="5" id="contactMessage" required></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="ms-md-auto">
+                                    <button type="submit" class="btn btn-sm btn-success">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-    </main>
+        </main>
 
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">&copy; 2021 Dennis Mayo.</span>
-        </div>
-    </footer>
+        <footer class="footer mt-auto py-1 border-top">
+            <div class="container text-center">
+                <span class="text-muted">&copy; Copywrite 2021 Dennis Mayo.</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </html>
