@@ -16,6 +16,9 @@ main > .container {
     padding: 20px 15px 0;
 }
 
-.input-group-text {
-  min-width: 50px;
+a {
+    color: #999;
+}
+a:hover {
+    color: #555;
 }

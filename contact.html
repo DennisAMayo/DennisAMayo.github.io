@@ -13,17 +13,32 @@
 <body class="d-flex flex-column bg-light h-100">
 
     <header class="container">
-        <div class="d-flex flex-column flex-md-row align-items-center py-3 mb-4 border-bottom">
-            <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none">
-                <span class="fs-4">Dennis Mayo</span>
-            </a>
-        
-            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Home</a>
-                <a class="me-3 py-2 text-dark text-decoration-none" href="./portfolio.html">Portfolio</a>
-                <a class="me-3 py-2 text-dark text-decoration-none active" href="./contact.html">Contact Me</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md navbar-light align-items-center py-3 mb-4 border-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Dennis Mayo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html">Contact Me</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="https://www.linkedin.com/in/dennis-mayo-7958a2213/"><i class="bi bi-linkedin"></i></a> 
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="https://github.com/DennisAMayo?tab=repositories"><i class="bi bi-github"></i></a> 
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="mailto:mayo.dennis87@gmail.com"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+        </nav>
     </header>
     
     <main class="flex-shrink-0">
@@ -40,21 +55,21 @@
                         <div class="card-body">
                             <div>
                                 <p class="g-color-gray-dark-v3 mb-2">
-                                    <i class="bi bi-at"></i> Email: 
+                                    <i class="bi bi-at"></i>
                                     <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a>
                                 </p>
                             </div>
 
                             <div>
                                 <p class="g-color-gray-dark-v3 mb-2">
-                                    <i class="bi bi-github"></i> GitHub: 
+                                    <i class="bi bi-github"></i>
                                     <a class="g-color-gray-dark-v4" href="https://github.com/DennisAMayo?tab=repositories">GitHub Repositories</a>
                                 </p>
                             </div>
                             
                             <div>
                                 <p class="g-color-gray-dark-v3 mb-2">
-                                    <i class="bi bi-linkedin"></i> LinkedIn: 
+                                    <i class="bi bi-linkedin"></i>
                                     <a class="g-color-gray-dark-v4" href="https://www.linkedin.com/in/dennis-mayo-7958a2213/">Dennis Mayo</a>
                                 </p>
                             </div>
@@ -103,13 +118,8 @@
     <footer class="footer mt-auto">
         <div class="container py-3 border-top">
             <div class="row">
-                <div class="col-md-6">
+                <div class="float-end">
                     <span class="text-muted">&copy; Copywrite 2021 Dennis Mayo.</span>
-                </div>
-                <div class="col-md-6">
-                    <i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/dennis-mayo-7958a2213/">LinkedIn</a> | 
-                    <i class="bi bi-github"></i> <a href="https://github.com/DennisAMayo?tab=repositories">Github</a> | 
-                    <i class="bi bi-at"></i> <a href="mailto:mayo.dennis87@gmail.com">Email</a>
                 </div>
             </div>
         </div>

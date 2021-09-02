@@ -13,68 +13,71 @@
 <body class="d-flex flex-column bg-light h-100">
     
     <header class="container">
-        <div class="d-flex flex-column flex-md-row align-items-center py-3 mb-4 border-bottom">
-            <a href="./index.html" class="d-flex align-items-center text-dark text-decoration-none">
-                <span class="fs-4">Dennis Mayo</span>
-            </a>
-        
-            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                <a class="me-3 py-2 text-dark text-decoration-none" href="./index.html">Home</a>
-                <a class="me-3 py-2 text-dark text-decoration-none active" href="./portfolio.html">Portfolio</a>
-                <a class="me-3 py-2 text-dark text-decoration-none" href="./contact.html">Contact Me</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md navbar-light align-items-center py-3 mb-4 border-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Dennis Mayo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Me</a>
+                  </li>
+                </ul>
+                <div class="d-flex">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="https://www.linkedin.com/in/dennis-mayo-7958a2213/"><i class="bi bi-linkedin"></i></a> 
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="https://github.com/DennisAMayo?tab=repositories"><i class="bi bi-github"></i></a> 
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="mailto:mayo.dennis87@gmail.com"><i class="bi bi-envelope"></i></a>
+                </div>
+              </div>
+            </div>
+        </nav>
     </header>
     
     <main class="flex-shrink-0">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center mb-3">
-                    If you wish to contact me, you can either use the form below or use one of the other methods provided.
-                </div>
-                <div class="col-md-4">
-                    <h2 class="h3 mb-4">Contact info</h2>
-                    <div>
-                        <i class="fa fa-free-code-camp"></i>
-                        <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a></p>
-                    </div>
-                    <div>
-                        <i class="fas fa-at"></i>
-                        <p class="g-color-gray-dark-v3 mb-2">Email: <a class="g-color-gray-dark-v4" href="mailto:mayo.dennis87@gmail.com">mayo.dennis87@gmail.com</a></p>
+            <p class="text-center mb-5">Here are a collection of projects/exercises that I completed while in the Full Stack program.
+            <div class="row text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">PacMan</h4>
+                      </div>
+                      <div class="card-body">
+                        <p style="min-height: 75px;">Using Javascript to create PacMan game.</p>
+                        <a class="btn btn-md btn-success" href="https://dennisamayo.github.io/PacMan/">View Page</a> <a class="btn btn-md btn-success" href="https://github.com/DennisAMayo/PacMan">View Repo</a>
+                      </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="message"></div>
-                    <form id="contact" method="POST">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="mb-1">
-                                    <label for="contactName" class="form-label">Name</label>
-                                    <input type="text" class="form-control form-control-sm" name="name" id="contactName" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-1">
-                                    <label for="contactEmail" class="form-label">Email address</label>
-                                    <input type="email" class="form-control form-control-sm" name="email" id="contactEmail" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-1">
-                            <label for="contactSubject" class="form-label">Subject</label>
-                            <input type="text" class="form-control form-control-sm" name="subject" id="contactSubject" required>
-                        </div>
-                        <div class="mb-1">
-                            <label for="contactMessage" class="form-label">Message</label>
-                            <textarea class="form-control form-control-sm" name="message" rows="5" id="contactMessage" required></textarea>
-                        </div>
-                        <div class="row">
-                            <div class="ms-md-auto">
-                                <button type="submit" class="btn btn-sm btn-success">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Eye Exercise</h4>
+                      </div>
+                      <div class="card-body">
+                        <p style="min-height: 75px;">Using Javascript to have a set of eyes follow your mouse pointer around.</p>
+                        <a class="btn btn-md btn-success" href="https://dennisamayo.github.io/Eye-Exercise/">View Page</a> <a class="btn btn-md btn-success" href="https://github.com/DennisAMayo/Eye-Exercise">View Repo</a>
+                      </div>
+                    </div>
                 </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                      <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Bus Tracker</h4>
+                      </div>
+                      <div class="card-body">
+                        <p style="min-height: 75px;">Using Javascript to track position of the bus going from MIT to Harvard.</p>
+                        <a class="btn btn-md btn-success" href="#">View Page</a> <a class="btn btn-md btn-success" href="https://github.com/DennisAMayo/PacMan">View Repo</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
     </main>
@@ -86,9 +89,7 @@
                     <span class="text-muted">&copy; Copywrite 2021 Dennis Mayo.</span>
                 </div>
                 <div class="col-md-6">
-                    <div class="text-right">
-                        <a href="https://www.linkedin.com/in/dennis-mayo-7958a2213/">LinkedIn</a> | <a href="https://github.com/DennisAMayo?tab=repositories">Github</a> | <a href="mailto:mayo.dennis87@gmail.com">Email</a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/dennis-mayo-7958a2213/">LinkedIn</a> | <a href="https://github.com/DennisAMayo?tab=repositories">Github</a> | <a href="mailto:mayo.dennis87@gmail.com">Email</a>
                 </div>
             </div>
         </div>
@@ -96,7 +97,6 @@
 
     <script src="https://dennisamayo.github.io/assets/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://dennisamayo.github.io/assets/js/script.js"></script>
-    <script src="https://dennisamayo.github.io/assets/js/fontawesome.min.js"></script>
 
 </body>
 
