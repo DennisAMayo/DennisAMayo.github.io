@@ -18,9 +18,9 @@ main > .container {
 
 a {
     color: #999;
-    text-decoration-none
+    text-decoration: none;
 }
 a:hover {
     color: #555;
-    text-decoration-none
+    text-decoration: none;
 }
